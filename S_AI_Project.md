@@ -6,13 +6,13 @@ S_AI_Project
 
 필요 도구 및 기술
 --
-•	Python: 주 프로그래밍 언어 
+* Python: 주 프로그래밍 언어 
 
-•	TensorFlow: 딥러닝 모델 개발
+* TensorFlow: 딥러닝 모델 개발
 
-•	Keras: 딥러닝 라이브러리 (TensorFlow와 연동)
+* Keras: 딥러닝 라이브러리 (TensorFlow와 연동)
 
-•	colab Notebook: 데이터 분석 및 모델 학습 실험
+* colab Notebook: 데이터 분석 및 모델 학습 실험
 
 단계별 구현 계획
 --
