@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # 모델 로드
 model = load_model('model_3.h5')
-
+nonSkinModel = load_model('skin.h5')
 
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
@@ -44,12 +44,23 @@ def index():
         if file:
             # prepare_image 함수 호출 시 FileStorage 객체 전달
             image = prepare_image(file)
-            prediction = model.predict(image)[0][0]
+            prediction = nonSkinModel.predict(image)[0][0]
+            print("피부?")
             print(prediction)
-            result = "암" if prediction >= 0.5 else "아님"
-            return render_template("result.html", result=result)
+            if prediction >= 0.5:
+                prediction = model.predict(image)[0][0]
+                print(prediction)
+                result = "암" if prediction >= 0.5 else "아님"
+                return render_template("result.html", result=result)
+            else:
+                result = "피부 사진을 올려주세요"
+                return render_template("result.html", result=result)
 
     return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+image = prepare_image(file)
+            
