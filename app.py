@@ -50,8 +50,9 @@ def index():
             if prediction >= 0.5:
                 prediction = model.predict(image)[0][0]
                 print(prediction)
-                result = "암" if prediction >= 0.5 else "아님"
-                return render_template("result.html", result=result)
+                result = "피부암이 의심됩니다" if prediction >= 0.5 else "정상입니다"
+                per = prediction * 100
+                return render_template("result.html", result=result, per=per)
             else:
                 result = "피부 사진을 올려주세요"
                 return render_template("result.html", result=result)
