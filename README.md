@@ -1,4 +1,6 @@
 S_AI_Project
+###Overview
+![Overview](https://github.com/user-attachments/assets/f23fb8dd-9f08-456c-b15d-53c1402624b0)
 =
 프로젝트 목표  
 --
