@@ -16,6 +16,8 @@ S_AI_Project
 
 * colab Notebook: 데이터 분석 및 모델 학습 실험
 
+* flask: 로컬 서버 구축
+
 단계별 구현 계획
 --
 1. 데이터 수집 및 전처리
