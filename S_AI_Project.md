@@ -15,6 +15,8 @@ S_AI_Project
 * Keras: 딥러닝 라이브러리 (TensorFlow와 연동)
 
 * colab Notebook: 데이터 분석 및 모델 학습 실험
+  
+* flask: 로컬 서버 구축
 
 단계별 구현 계획
 --
